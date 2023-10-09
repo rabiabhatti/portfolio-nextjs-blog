@@ -71,8 +71,7 @@ export default function Index({ posts, globalData }) {
 
               <div className='mb-[6rem]' id='experience'>
                   {experience.map((item, index) => (
-                      <div className='flex mb-10 relative group transition-all lg:hover:!opacity-100 lg:group-hover/list:opacity-50' key={index}>
-                          <div className="absolute -inset-x-4 -inset-y-4 -z-50 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block dark:lg:group-hover:bg-white/5 lg:group-hover:bg-slate-600/5 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+                      <div className='flex mb-10 rounded p-2 lg:p-4 group backdrop-blur-lg transition-all bg-white dark:bg-black dark:bg-opacity-0 bg-opacity-0 hover:bg-opacity-20 dark:hover:bg-opacity-10' key={index}>
                           <Link href={item.link}>
                               <a target='_blank'><p className='uppercase mr-3 text-xs font-bold min-w-[7rem]'>{item.from} - {item.to}</p></a>
                           </Link>
@@ -100,8 +99,7 @@ export default function Index({ posts, globalData }) {
               <div id='projects' className='mb-[6rem]'>
                   {projects.map((project, index) => (
                       <Link href={project.link} key={index}>
-                          <a className='flex mb-10 relative group transition-all lg:hover:!opacity-100 lg:group-hover/list:opacity-50' target='_blank'>
-                              <div className="absolute -inset-x-4 -inset-y-4 -z-50 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block dark:lg:group-hover:bg-white/5 lg:group-hover:bg-slate-600/5 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+                          <a className='flex mb-10 rounded p-2 lg:p-4 group backdrop-blur-lg transition-all bg-white dark:bg-black dark:bg-opacity-0 bg-opacity-0 hover:bg-opacity-20 dark:hover:bg-opacity-10' target='_blank'>
                               <div className='mr-3 w-3/12'>
                                   <Image src={Img} alt={`${project.name} image`} width={112} height={50} objectFit='contain' />
                               </div>
@@ -124,7 +122,7 @@ export default function Index({ posts, globalData }) {
                           <Link
                               as={`/posts/${post.filePath.replace(/\.mdx?$/, '')}`}
                               href={`/posts/[slug]`}>
-                              <a className="py-2 lg:py-4 px-2 lg:px-4 block focus:outline-none focus:ring-4">
+                              <a className="p-2 lg:p-4 block focus:outline-none focus:ring-4">
                                   {post.data.date && (
                                       <p className="uppercase text-xs font-bold opacity-60">
                                           {post.data.date}
