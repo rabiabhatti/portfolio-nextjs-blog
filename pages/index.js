@@ -19,54 +19,57 @@ export default function Index({ posts, globalData }) {
   return (
     <Layout>
       <SEO title={globalData.name} description={globalData.blogTitle} />
-      <main className="flex relative justify-between gap-x-12">
-          <div className='block w-full'>
-              <div className='sticky top-16'>
-                  <div className='max-h-screen overflow-y-scroll'>
+      <div className="lg:flex lg:justify-between lg:gap-10">
+          <header className='lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:pb-24'>
+                  <div>
                       <h1 className='text-3xl lg:text-5xl'>Rabia Iqbal</h1>
                       <h2 className='text-2xl my-2'>Full-stack developer</h2>
                       <p className='opacity-60'>I build accessible, inclusive products and digital experiences for the web.</p>
-                      <ul className='mt-10'>
-                        <li>
-                            <Link href="#about">
-                                <a className='group flex items-center py-3 opacity-60 hover:opacity-100 transition-all'>
-                                    <span className='mr-4 h-px w-8 transition-all bg-black opacity-60 dark:bg-white group-hover:w-16 group-hover:opacity-100 group-focus-visible:w-16 group-focus-visible:opacity-100 motion-reduce:transition-none'></span>
-                                    <span className='text-xs font-bold uppercase tracking-widest'>about</span>
-                                </a>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="#experience">
-                                <a className='group flex items-center py-3 opacity-60 hover:opacity-100 transition-all'>
-                                    <span className='mr-4 h-px w-8 transition-all bg-black opacity-60 dark:bg-white group-hover:w-16 group-hover:opacity-100 group-focus-visible:w-16 group-focus-visible:opacity-100 motion-reduce:transition-none'></span>
-                                    <span className='text-xs font-bold uppercase tracking-widest'>experience</span>
-                                </a>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="#projects">
-                                <a className='group flex items-center py-3 opacity-60 hover:opacity-100 transition-all'>
-                                    <span className='mr-4 h-px w-8 transition-all bg-black opacity-60 dark:bg-white group-hover:w-16 group-hover:opacity-100 group-focus-visible:w-16 group-focus-visible:opacity-100 motion-reduce:transition-none'></span>
-                                    <span className='text-xs font-bold uppercase tracking-widest'>projects</span>
-                                </a>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="#blog">
-                                <a className='group flex items-center py-3 opacity-60 hover:opacity-100 transition-all'>
-                                    <span className='mr-4 h-px w-8 transition-all bg-black opacity-60 dark:bg-white group-hover:w-16 group-hover:opacity-100 group-focus-visible:w-16 group-focus-visible:opacity-100 motion-reduce:transition-none'></span>
-                                    <span className='text-xs font-bold uppercase tracking-widest'>blog</span>
-                                </a>
-                            </Link>
-                        </li>
-                      </ul>
+                      <nav>
+                          <ul className='mt-10'>
+                              <li>
+                                  <Link href="#about">
+                                      <a className='group flex items-center py-3 opacity-60 hover:opacity-100 transition-all'>
+                                          <span className='mr-4 h-px w-8 transition-all bg-black opacity-60 dark:bg-white group-hover:w-16 group-hover:opacity-100 group-focus-visible:w-16 group-focus-visible:opacity-100 motion-reduce:transition-none'></span>
+                                          <span className='text-xs font-bold uppercase tracking-widest'>about</span>
+                                      </a>
+                                  </Link>
+                              </li>
+                              <li>
+                                  <Link href="#experience">
+                                      <a className='group flex items-center py-3 opacity-60 hover:opacity-100 transition-all'>
+                                          <span className='mr-4 h-px w-8 transition-all bg-black opacity-60 dark:bg-white group-hover:w-16 group-hover:opacity-100 group-focus-visible:w-16 group-focus-visible:opacity-100 motion-reduce:transition-none'></span>
+                                          <span className='text-xs font-bold uppercase tracking-widest'>experience</span>
+                                      </a>
+                                  </Link>
+                              </li>
+                              <li>
+                                  <Link href="#projects">
+                                      <a className='group flex items-center py-3 opacity-60 hover:opacity-100 transition-all'>
+                                          <span className='mr-4 h-px w-8 transition-all bg-black opacity-60 dark:bg-white group-hover:w-16 group-hover:opacity-100 group-focus-visible:w-16 group-focus-visible:opacity-100 motion-reduce:transition-none'></span>
+                                          <span className='text-xs font-bold uppercase tracking-widest'>projects</span>
+                                      </a>
+                                  </Link>
+                              </li>
+                              <li>
+                                  <Link href="#blog">
+                                      <a className='group flex items-center py-3 opacity-60 hover:opacity-100 transition-all'>
+                                          <span className='mr-4 h-px w-8 transition-all bg-black opacity-60 dark:bg-white group-hover:w-16 group-hover:opacity-100 group-focus-visible:w-16 group-focus-visible:opacity-100 motion-reduce:transition-none'></span>
+                                          <span className='text-xs font-bold uppercase tracking-widest'>blog</span>
+                                      </a>
+                                  </Link>
+                              </li>
+                          </ul>
+                      </nav>
+                  </div>
+
+                  <div>
                       <SocialIcons />
                       <ThemeSwitcher classes='mt-4 max-w-[10rem]' />
                   </div>
-              </div>
-          </div>
-          <div className='w-full' id='about'>
-              <div>
+          </header>
+          <main className='lg:w-1/2'>
+              <div id='about'>
                   <p className='mb-4'>Back in 2012, I decided to try my hand at creating custom Tumblr themes and tumbled head first into the rabbit hole of coding and web development. Fast-forward to today, and I’ve had the privilege of building software for an advertising agency, a start-up, a student-led design studio, and a huge corporation.</p>
                   <p className='mb-4'> My main focus these days is building products and leading projects for our clients at Upstatement. In my free time I've also released an online video course that covers everything you need to know to build a web app with the Spotify API.</p>
                   <p className='mb-4'>When I’m not at the computer, I’m usually rock climbing, hanging out with my wife and two cats, or running around Hyrule searching for Korok seeds</p>
@@ -141,8 +144,8 @@ export default function Index({ posts, globalData }) {
                       </li>
                   ))}
               </ul>
-          </div>
-      </main>
+          </main>
+      </div>
 
       <GradientBackground
         variant="large"
