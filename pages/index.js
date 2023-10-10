@@ -1,63 +1,66 @@
 import Link from 'next/link';
 import Image from 'next/image'
-import { getPosts } from '../utils/mdx-utils';
 
+
+import SEO from '../components/SEO';
+import ArrowIcon from '../components/ArrowIcon';
+import SocialIcons from '../components/SocialIcons';
 import ThemeSwitcher from '../components/ThemeSwitcher';
 import Header from '../components/Header';
 import Layout, { GradientBackground } from '../components/Layout';
-import ArrowIcon from '../components/ArrowIcon';
-import { getGlobalData } from '../utils/global-data';
-import SEO from '../components/SEO';
 
+import { getPosts } from '../utils/mdx-utils';
+import { getGlobalData } from '../utils/global-data';
 import { experience, projects } from '../utils/common';
+
 import Img from '../images/img.png'
 
 export default function Index({ posts, globalData }) {
   return (
     <Layout>
       <SEO title={globalData.name} description={globalData.blogTitle} />
-      {/*<Header name={globalData.name} />*/}
       <main className="flex relative justify-between gap-x-12">
           <div className='block w-full'>
               <div className='sticky top-16'>
-                  <div className='max-h-100 overflow-y-scroll'>
+                  <div className='max-h-screen overflow-y-scroll'>
                       <h1 className='text-3xl lg:text-5xl'>Rabia Iqbal</h1>
-                      <h2 className='text-2xl my-4'>Full-stack developer</h2>
-                      <p className=''>I build accessible, inclusive products and digital experiences for the web.</p>
-                      <ul className='mt-8'>
+                      <h2 className='text-2xl my-2'>Full-stack developer</h2>
+                      <p className='opacity-60'>I build accessible, inclusive products and digital experiences for the web.</p>
+                      <ul className='mt-10'>
                         <li>
                             <Link href="#about">
-                                <a className='group flex items-center py-3'>
-                                    <span className='mr-4 h-px w-8 transition-all bg-gray-400 group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none'></span>
-                                    <span className='text-xs font-bold uppercase tracking-widest group-hover:text-slate-200 group-focus-visible:text-slate-200'>about</span>
+                                <a className='group flex items-center py-3 opacity-60 hover:opacity-100 transition-all'>
+                                    <span className='mr-4 h-px w-8 transition-all bg-black opacity-60 dark:bg-white group-hover:w-16 group-hover:opacity-100 group-focus-visible:w-16 group-focus-visible:opacity-100 motion-reduce:transition-none'></span>
+                                    <span className='text-xs font-bold uppercase tracking-widest'>about</span>
                                 </a>
                             </Link>
                         </li>
                         <li>
                             <Link href="#experience">
-                                <a className='group flex items-center py-3'>
-                                    <span className='mr-4 h-px w-8 transition-all bg-gray-400 group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none'></span>
-                                    <span className='text-xs font-bold uppercase tracking-widest group-hover:text-slate-200 group-focus-visible:text-slate-200'>experience</span>
+                                <a className='group flex items-center py-3 opacity-60 hover:opacity-100 transition-all'>
+                                    <span className='mr-4 h-px w-8 transition-all bg-black opacity-60 dark:bg-white group-hover:w-16 group-hover:opacity-100 group-focus-visible:w-16 group-focus-visible:opacity-100 motion-reduce:transition-none'></span>
+                                    <span className='text-xs font-bold uppercase tracking-widest'>experience</span>
                                 </a>
                             </Link>
                         </li>
                         <li>
                             <Link href="#projects">
-                                <a className='group flex items-center py-3'>
-                                    <span className='mr-4 h-px w-8 transition-all bg-gray-400 group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none'></span>
-                                    <span className='text-xs font-bold uppercase tracking-widest group-hover:text-slate-200 group-focus-visible:text-slate-200'>projects</span>
+                                <a className='group flex items-center py-3 opacity-60 hover:opacity-100 transition-all'>
+                                    <span className='mr-4 h-px w-8 transition-all bg-black opacity-60 dark:bg-white group-hover:w-16 group-hover:opacity-100 group-focus-visible:w-16 group-focus-visible:opacity-100 motion-reduce:transition-none'></span>
+                                    <span className='text-xs font-bold uppercase tracking-widest'>projects</span>
                                 </a>
                             </Link>
                         </li>
                         <li>
                             <Link href="#blog">
-                                <a className='group flex items-center py-3'>
-                                    <span className='mr-4 h-px w-8 transition-all bg-gray-400 group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none'></span>
-                                    <span className='text-xs font-bold uppercase tracking-widest group-hover:text-slate-200 group-focus-visible:text-slate-200'>blog</span>
+                                <a className='group flex items-center py-3 opacity-60 hover:opacity-100 transition-all'>
+                                    <span className='mr-4 h-px w-8 transition-all bg-black opacity-60 dark:bg-white group-hover:w-16 group-hover:opacity-100 group-focus-visible:w-16 group-focus-visible:opacity-100 motion-reduce:transition-none'></span>
+                                    <span className='text-xs font-bold uppercase tracking-widest'>blog</span>
                                 </a>
                             </Link>
                         </li>
                       </ul>
+                      <SocialIcons />
                       <ThemeSwitcher classes='mt-4 max-w-[10rem]' />
                   </div>
               </div>
@@ -69,7 +72,7 @@ export default function Index({ posts, globalData }) {
                   <p className='mb-4'>When I’m not at the computer, I’m usually rock climbing, hanging out with my wife and two cats, or running around Hyrule searching for Korok seeds</p>
               </div>
 
-              <div className='mb-[6rem]' id='experience'>
+              <div className='my-[6rem]' id='experience'>
                   {experience.map((item, index) => (
                       <div className='flex mb-10 rounded p-2 lg:p-4 group backdrop-blur-lg transition-all bg-white dark:bg-black dark:bg-opacity-0 bg-opacity-0 hover:bg-opacity-20 dark:hover:bg-opacity-10' key={index}>
                           <Link href={item.link}>
