@@ -20,7 +20,7 @@ export default function Index({ posts, globalData }) {
     <Layout>
       <SEO title={globalData.name} description={globalData.blogTitle} />
       <div className="lg:flex lg:justify-between lg:gap-10">
-          <header className='lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:pb-24'>
+          <header className='lg:sticky lg:top-1 lg:flex lg:max-h-[90vh] lg:w-1/2 lg:flex-col lg:justify-between'>
                   <div>
                       <h1 className='text-3xl lg:text-5xl'>Rabia Iqbal</h1>
                       <h2 className='text-2xl my-2'>Full-stack developer</h2>
