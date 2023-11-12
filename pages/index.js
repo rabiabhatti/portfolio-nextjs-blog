@@ -79,7 +79,7 @@ export default function Index({ posts, globalData }) {
 
               <div className='my-[6rem]' id='experience'>
                   {experience.map((item, index) => (
-                      <div className='flex mb-10 rounded p-2 lg:p-4 group backdrop-blur-lg transition-all bg-white dark:bg-black dark:bg-opacity-0 bg-opacity-0 hover:bg-opacity-20 dark:hover:bg-opacity-10' key={index}>
+                      <div className='flex mb-6 rounded p-2 lg:p-4 group backdrop-blur-lg transition-all bg-white dark:bg-black dark:bg-opacity-0 bg-opacity-0 hover:bg-opacity-20 dark:hover:bg-opacity-10' key={index}>
                           <Link href={item.link}>
                               <a target='_blank' rel="noreferrer"><p className='uppercase mr-3 text-xs font-bold min-w-[7rem]'>{item.from} - {item.to}</p></a>
                           </Link>
@@ -87,7 +87,7 @@ export default function Index({ posts, globalData }) {
                           <div>
                             <Link href={item.link}>
                                 <a target='_blank'>
-                                    <h3 className='font-bold leading-4 flex justify-between'>
+                                    <h3 className='font-bold leading-snug flex justify-between'>
                                         <span>{item.role} · {item.company}</span>
                                         <ArrowIcon className='-rotate-45' />
                                     </h3>
@@ -128,12 +128,12 @@ export default function Index({ posts, globalData }) {
               <div id='projects' className='mb-[6rem]'>
                   {projects.map((project, index) => (
                       <Link href={project.link} key={index}>
-                          <a className='flex mb-10 rounded p-2 lg:p-4 group backdrop-blur-lg transition-all bg-white dark:bg-black dark:bg-opacity-0 bg-opacity-0 hover:bg-opacity-20 dark:hover:bg-opacity-10' target='_blank'>
+                          <a className='flex mb-6 rounded p-2 lg:p-4 group backdrop-blur-lg transition-all bg-white dark:bg-black dark:bg-opacity-0 bg-opacity-0 hover:bg-opacity-20 dark:hover:bg-opacity-10' target='_blank'>
                               <div className='mr-3 w-3/12'>
-                                  <Image src={Img} alt={`${project.name} image`} width={112} height={50} objectFit='contain' />
+                                  <Image src={project.image} alt={`${project.name} image`} width={112} height={50} objectFit='contain' />
                               </div>
                               <div className='w-9/12'>
-                                  <h3 className='font-bold leading-4 flex justify-between'>
+                                  <h3 className='font-bold leading-snug flex justify-between'>
                                       <span>{project.name}</span>
                                       <ArrowIcon className='-rotate-45' />
                                   </h3>
