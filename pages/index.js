@@ -12,8 +12,6 @@ import { getPosts } from '../utils/mdx-utils';
 import { getGlobalData } from '../utils/global-data';
 import { experience, projects } from '../utils/common';
 
-import Img from '../images/img.png'
-
 export default function Index({ posts, globalData }) {
   return (
     <Layout>
@@ -70,11 +68,11 @@ export default function Index({ posts, globalData }) {
           <main className='lg:w-1/2'>
               <div id='about' className='text-base'>
                   <p className='mb-4'>
-                      I am full-stack developer with nearly seven years of experience in software development, Over the years, I've honed my skills in a wide range of technologies, including front-end frameworks like <strong>React, React Native, Svelte, Vue.js, Next.js, Qwik</strong>, and <strong>CSS</strong> preprocessors like <strong>SCSS</strong> and <strong>LESS</strong>
+                      I am full-stack developer with nearly seven years of experience in software development, Over the years, I have honed my skills in a wide range of technologies, including front-end frameworks like <strong>React, React Native, Svelte, Vue.js, Next.js, Qwik</strong>, and <strong>CSS</strong> preprocessors like <strong>SCSS</strong> and <strong>LESS</strong>
                   </p>
                   <p className='mb-4'>On the back-end, I specialize in <strong>Node.js, GraphQL, Sequelize</strong>, and have a deep understanding of databases such as <strong>MongoDB, PostgreSQL</strong> and <strong>SQL</strong>.</p>
                   <p className='mb-4'> My web development toolkit includes <strong>Hugo</strong> and <strong>Tailwind CSS</strong>, enabling me to create modern, efficient, and <strong>SEO-friendly</strong> websites.</p>
-                  <p>Feel free to reach out if you're interested in working together or have any questions about my expertise or past projects. I'm excited to embark on new challenges and bring innovative ideas to life.</p>
+                  <p>Feel free to reach out if you are interested in working together or have any questions about my expertise or past projects. I am excited to embark on new challenges and bring innovative ideas to life.</p>
               </div>
 
               <div className='my-[6rem]' id='experience'>

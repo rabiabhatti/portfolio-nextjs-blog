@@ -104,7 +104,7 @@ export const projects = [
         link: 'https://pc-builder.net/'
     },{
         name: 'Perfect Tech Reviews',
-        desc: 'We at Perfect Tech Reviews, Help you to find Best Products for your needs. You can find all the latest news and TechReviews on Technology, Gadgets, and all...',
+        desc: 'We at Perfect Tech Reviews, help you to find best products for your needs. You can find all the latest news and TechReviews on Technology, Gadgets, and all...',
         image: require('/images/perfect-tech-reviews.jpg'),
         link: 'https://www.perfecttechreviews.com/'
     },{
