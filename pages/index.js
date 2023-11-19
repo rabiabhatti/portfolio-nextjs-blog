@@ -21,9 +21,9 @@ export default function Index({ posts, globalData }) {
                   <div>
                       <h1 className='text-3xl lg:text-5xl font-bold font-medium'>Rabia Iqbal</h1>
                       <h2 className='text-2xl my-2'>Full-stack developer</h2>
-                      <p className='opacity-60 text-base'>Freelance developer who is passionate about building innovative web and mobile solutions.</p>
+                      <p className='opacity-60 text-base hidden md:block'>Freelance developer who is passionate about building innovative web and mobile solutions.</p>
                       <nav>
-                          <ul className='mt-10'>
+                          <ul className='mt-10 hidden md:block'>
                               <li>
                                   <Link href="#about">
                                       <a className='group flex items-center py-3 opacity-60 hover:opacity-100 transition-all'>
@@ -60,9 +60,9 @@ export default function Index({ posts, globalData }) {
                       </nav>
                   </div>
 
-                  <div>
+                  <div className='flex my-6 items-center justify-between md:block'>
                       <SocialIcons />
-                      <ThemeSwitcher classes='mt-4 max-w-[10rem]' />
+                      <ThemeSwitcher classes='max-w-[10rem]' />
                   </div>
           </header>
           <main className='lg:w-1/2'>
@@ -75,7 +75,8 @@ export default function Index({ posts, globalData }) {
                   <p>Feel free to reach out if you are interested in working together or have any questions about my expertise or past projects. I am excited to embark on new challenges and bring innovative ideas to life.</p>
               </div>
 
-              <div className='my-[6rem]' id='experience'>
+              <div className='md:my-[6rem]' id='experience'>
+                  <h2 className='text-2xl my-6 font-bold md:hidden'>Experience</h2>
                   {experience.map((item, index) => (
                       <div className='flex mb-6 rounded p-2 lg:p-4 group backdrop-blur-lg transition-all bg-white dark:bg-black dark:bg-opacity-0 bg-opacity-0 hover:bg-opacity-20 dark:hover:bg-opacity-10' key={index}>
                           <Link href={item.link}>
@@ -123,7 +124,8 @@ export default function Index({ posts, globalData }) {
                   ))}
               </div>
 
-              <div id='projects' className='mb-[6rem]'>
+              <div id='projects' className='md:mb-[6rem]'>
+                  <h2 className='text-2xl my-6 font-bold md:hidden'>Projects</h2>
                   {projects.map((project, index) => (
                       <Link href={project.link} key={index}>
                           <a className='flex mb-6 rounded p-2 lg:p-4 group backdrop-blur-lg transition-all bg-white dark:bg-black dark:bg-opacity-0 bg-opacity-0 hover:bg-opacity-20 dark:hover:bg-opacity-10' target='_blank'>
