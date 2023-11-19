@@ -19,7 +19,7 @@ export default function Index({ posts, globalData }) {
       <div className="lg:flex lg:justify-between lg:gap-10">
           <header className='lg:sticky lg:top-1 lg:flex lg:max-h-[90vh] lg:w-1/2 lg:flex-col lg:justify-between'>
                   <div>
-                      <h1 className='text-3xl lg:text-5xl'>Rabia Iqbal</h1>
+                      <h1 className='text-3xl lg:text-5xl font-bold font-medium'>Rabia Iqbal</h1>
                       <h2 className='text-2xl my-2'>Full-stack developer</h2>
                       <p className='opacity-60 text-base'>Freelance developer who is passionate about building innovative web and mobile solutions.</p>
                       <nav>
@@ -115,7 +115,7 @@ export default function Index({ posts, globalData }) {
                               ) : ''}
                             <div className='flex flex-wrap items-baseline mt-4'>
                                 {item.technologies_used.map((tech, i) => (
-                                    <p className='text-center text-xs font-bold dark:bg-primary rounded-3xl p-2 mb-2 mr-2 bg-white' key={i}>{tech}</p>
+                                    <p className='text-center text-xs font-bold bg-primary rounded-3xl p-2 mb-2 mr-2 text-white' key={i}>{tech}</p>
                                 ))}
                             </div>
                           </div>
