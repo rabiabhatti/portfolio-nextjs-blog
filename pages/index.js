@@ -48,14 +48,14 @@ export default function Index({ posts, globalData }) {
                                       </a>
                                   </Link>
                               </li>
-                              <li>
-                                  <Link href="#blog">
-                                      <a className='group flex items-center py-3 opacity-60 hover:opacity-100 transition-all'>
-                                          <span className='mr-4 h-px w-8 transition-all bg-black opacity-60 dark:bg-white group-hover:w-16 group-hover:opacity-100 group-focus-visible:w-16 group-focus-visible:opacity-100 motion-reduce:transition-none'></span>
-                                          <span className='text-xs font-bold uppercase tracking-widest'>blog</span>
-                                      </a>
-                                  </Link>
-                              </li>
+                              {/*<li>*/}
+                              {/*    <Link href="#blog">*/}
+                              {/*        <a className='group flex items-center py-3 opacity-60 hover:opacity-100 transition-all'>*/}
+                              {/*            <span className='mr-4 h-px w-8 transition-all bg-black opacity-60 dark:bg-white group-hover:w-16 group-hover:opacity-100 group-focus-visible:w-16 group-focus-visible:opacity-100 motion-reduce:transition-none'></span>*/}
+                              {/*            <span className='text-xs font-bold uppercase tracking-widest'>blog</span>*/}
+                              {/*        </a>*/}
+                              {/*    </Link>*/}
+                              {/*</li>*/}
                           </ul>
                       </nav>
                   </div>
@@ -70,7 +70,7 @@ export default function Index({ posts, globalData }) {
                   <p className='mb-4'>
                       I am full-stack developer with nearly seven years of experience in software development, Over the years, I have honed my skills in a wide range of technologies, including front-end frameworks like <strong>React, React Native, Svelte, Vue.js, Next.js, Qwik</strong>, and <strong>CSS</strong> preprocessors like <strong>SCSS</strong> and <strong>LESS</strong>
                   </p>
-                  <p className='mb-4'>On the back-end, I specialize in <strong>Node.js, Express.js, AWS, GraphQL, Sequelize</strong>, and have a deep understanding of databases such as <strong>DynamoDB, MongoDB, PostgreSQL</strong> and <strong>SQL</strong>.</p>
+                  <p className='mb-4'>On the back-end, I specialize in <strong>Node.js, Express.js, AWS-SDK, GraphQL, Sequelize</strong>, and have a deep understanding of databases such as <strong>DynamoDB, MongoDB, PostgreSQL</strong> and <strong>SQL</strong>.</p>
                   <p className='mb-4'> My web development toolkit includes <strong>Netlify, Next.js, Hugo</strong> and <strong>Tailwind CSS</strong>, enabling me to create modern, efficient, and <strong>SEO-friendly</strong> websites.</p>
                   <p>Feel free to reach out if you are interested in working together or have any questions about my expertise or past projects. I am excited to embark on new challenges and bring innovative ideas to life.</p>
               </div>
@@ -144,29 +144,29 @@ export default function Index({ posts, globalData }) {
                   ))}
               </div>
 
-              <ul id='blog'>
-                  {posts.map((post) => (
-                      <li key={post.filePath}
-                          className="mb-10 rounded backdrop-blur-lg bg-white dark:bg-black dark:bg-opacity-30 bg-opacity-10 hover:bg-opacity-20 dark:hover:bg-opacity-50 transition">
-                          <Link
-                              as={`/posts/${post.filePath.replace(/\.mdx?$/, '')}`}
-                              href={`/posts/[slug]`}>
-                              <a className="p-2 lg:p-4 block focus:outline-none focus:ring-4">
-                                  {post.data.date && (
-                                      <p className="uppercase text-xs font-bold opacity-60">
-                                          {post.data.date}
-                                      </p>
-                                  )}
-                                  <h3 className="font-bold my-2">{post.data.title}</h3>
-                                  {post.data.description && (
-                                      <p className="text-sm opacity-60">{post.data.description}</p>
-                                  )}
-                                  <ArrowIcon className="mt-2" />
-                              </a>
-                          </Link>
-                      </li>
-                  ))}
-              </ul>
+              {/*<ul id='blog'>*/}
+              {/*    {posts.map((post) => (*/}
+              {/*        <li key={post.filePath}*/}
+              {/*            className="mb-10 rounded backdrop-blur-lg bg-white dark:bg-black dark:bg-opacity-30 bg-opacity-10 hover:bg-opacity-20 dark:hover:bg-opacity-50 transition">*/}
+              {/*            <Link*/}
+              {/*                as={`/posts/${post.filePath.replace(/\.mdx?$/, '')}`}*/}
+              {/*                href={`/posts/[slug]`}>*/}
+              {/*                <a className="p-2 lg:p-4 block focus:outline-none focus:ring-4">*/}
+              {/*                    {post.data.date && (*/}
+              {/*                        <p className="uppercase text-xs font-bold opacity-60">*/}
+              {/*                            {post.data.date}*/}
+              {/*                        </p>*/}
+              {/*                    )}*/}
+              {/*                    <h3 className="font-bold my-2">{post.data.title}</h3>*/}
+              {/*                    {post.data.description && (*/}
+              {/*                        <p className="text-sm opacity-60">{post.data.description}</p>*/}
+              {/*                    )}*/}
+              {/*                    <ArrowIcon className="mt-2" />*/}
+              {/*                </a>*/}
+              {/*            </Link>*/}
+              {/*        </li>*/}
+              {/*    ))}*/}
+              {/*</ul>*/}
           </main>
       </div>
 
