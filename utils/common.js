@@ -90,52 +90,52 @@ export const projects = [
     {
         name: 'Miyar - Website Testing Platform',
         desc: 'Discover the best website testing platform for efficient and reliable personalized user-flow tests, ensuring seamless experiences, avoiding broken websites, and preserving revenue.',
-        image: require('/images/miyar.jpg'),
+        image: require('/public/images/miyar.jpg'),
         link: 'https://miyar.co/'
     },{
         name: 'DomainDar - Escrow services',
         desc: 'Choose the best domain registration and management experience for .PK domain names.',
-        image: require('/images/domaindar.jpg'),
+        image: require('/public/images/domaindar.jpg'),
         link: 'https://domaindar.pk/'
     },{
         name: 'PC Builder',
         desc: 'PCBuilder is the easiest way to build your own custom PC. We make it easy to find compatible parts and put them all together for you.',
-        image: require('/images/pcbuilder.jpg'),
+        image: require('/public/images/pcbuilder.jpg'),
         link: 'https://pc-builder.net/'
     },{
         name: 'Perfect Tech Reviews',
         desc: 'We at Perfect Tech Reviews, help you to find best products for your needs. You can find all the latest news and TechReviews on Technology, Gadgets, and all...',
-        image: require('/images/perfect-tech-reviews.jpg'),
+        image: require('/public/images/perfect-tech-reviews.jpg'),
         link: 'https://www.perfecttechreviews.com/'
     },{
         name: 'Final Desktop',
         desc: 'At Final Desktop, we do Research & review PC components daily to help you find the best for your gaming rig. We cover Motherboards, CPUs, Graphics Cards, RAMs...',
-        image: require('/images/final-desktop.jpg'),
+        image: require('/public/images/final-desktop.jpg'),
         link: 'https://finaldesktop.com/'
     },{
         name: 'BKB Mag',
         desc: 'BKB Mag brings you the latest in PC and console gaming news, updates, and reviews. Stay ahead of the competition with our coverage of the latest games.',
-        image: require('/images/bkb-mag.jpg'),
+        image: require('/public/images/bkb-mag.jpg'),
         link: 'https://bkbmag.com/'
     },{
         name: 'Jamun',
         desc: 'We build and scale serverless and JAMStack products and services.',
-        image: require('/images/jamun.jpg'),
+        image: require('/public/images/jamun.jpg'),
         link: 'https://jamun.co/'
     },{
         name: 'Ejad Labs',
         desc: 'Leading Digital Accelerator in Pakistan & South Asia. We conduct International Summits & Business Development Programs in South Asia, USA, & Europe, in partnerships with governments, corporates, startups & entrepreneurs.',
-        image: require('/images/ejad-labs.jpg'),
+        image: require('/public/images/ejad-labs.jpg'),
         link: 'https://ejadlabs.com/'
     },{
         name: 'Arogga Mobile App',
         desc: 'With Arogga app, getting the medicine you need is simple. Download the easy-to-use Arogga App to conveniently order your medicines from anywhere, at anytime.',
-        image: require('/images/arogga.jpg'),
+        image: require('/public/images/arogga.jpg'),
         link: 'https://apps.apple.com/us/app/arogga/id1499378347'
     },{
         name: 'Trusted Blue Auto Mobile App',
         desc: 'Trusted Blue Auto is a subscription car care club based in Springfield, MO that provides its members with no charge oil changes...',
-        image: require('/images/trusted-blue-auto.jpg'),
+        image: require('/public/images/trusted-blue-auto.jpg'),
         link: 'https://play.google.com/store/apps/details?id=com.tba.trustedblueauto&hl=en_US&gl=US'
     },
 ]
