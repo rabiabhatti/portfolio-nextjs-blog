@@ -21,7 +21,7 @@ export default function Index({ posts, globalData }) {
                   <div>
                       <h1 className='text-3xl lg:text-5xl font-bold font-medium'>Rabia Iqbal</h1>
                       <h2 className='text-2xl my-2'>Full-stack developer</h2>
-                      <p className='opacity-60 text-base hidden md:block'>Freelance developer who is passionate about building innovative web and mobile solutions.</p>
+                      <p className='opacity-60 text-base hidden md:block'>Passionate about building innovative web and mobile solutions.</p>
                       <nav>
                           <ul className='mt-10 hidden md:block'>
                               <li>
