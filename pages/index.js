@@ -14,13 +14,6 @@ import { experience, projects } from '../utils/common';
 
 export default function Index({ posts, globalData }) {
   return (
-      <>
-          {/*<Head>*/}
-          {/*    <link rel="shortcut icon" href="/images/favicon.ico" />*/}
-          {/*    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />*/}
-          {/*    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png"/>*/}
-          {/*    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png"/>*/}
-          {/*</Head>*/}
     <Layout>
       <SEO title={globalData.name} description={globalData.blogTitle} />
       <div className="lg:flex lg:justify-between lg:gap-10">
@@ -129,7 +122,6 @@ export default function Index({ posts, globalData }) {
                           </div>
                       </div>
                   ))}
-                  <img src={'images/jamun.co'} />
               </div>
 
               <div id='projects' className='md:mb-[6rem]'>
@@ -187,7 +179,6 @@ export default function Index({ posts, globalData }) {
         className="absolute bottom-0 opacity-20 dark:opacity-10"
       />
     </Layout>
-          </>
   );
 }
 
