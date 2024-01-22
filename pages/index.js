@@ -68,7 +68,7 @@ export default function Index({ posts, globalData }) {
           <main className='lg:w-1/2'>
               <div id='about' className='text-base'>
                   <p className='mb-4'>
-                      I am full-stack developer with nearly seven years of experience in software development, Over the years, I have honed my skills in a wide range of technologies, including front-end frameworks like <strong>React, React Native, Svelte, Vue.js, Next.js, Qwik</strong>, and <strong>CSS</strong> preprocessors like <strong>SCSS</strong> and <strong>LESS</strong>
+                      I am full-stack developer with nearly seven years of experience in software development. Over the years, I have honed my skills in a wide range of technologies, including front-end frameworks like <strong>React, React Native, Svelte, Vue.js, Next.js, Qwik</strong>, and <strong>CSS</strong> preprocessors like <strong>SCSS</strong> and <strong>LESS</strong>
                   </p>
                   <p className='mb-4'>On the back-end, I specialize in <strong>Node.js, Express.js, AWS-SDK, GraphQL, Sequelize</strong>, and have a deep understanding of databases such as <strong>DynamoDB, MongoDB, PostgreSQL</strong> and <strong>SQL</strong>.</p>
                   <p className='mb-4'> My web development toolkit includes <strong>Netlify, Next.js, Hugo</strong> and <strong>Tailwind CSS</strong>, enabling me to create modern, efficient, and <strong>SEO-friendly</strong> websites.</p>
